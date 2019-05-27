@@ -22,8 +22,8 @@ public class SearchController {
 
 	@RequestMapping("/infoview")
 	public String infoview(String id, Model model) {
-		Integer idIntForm = Integer.parseInt(id);
-		User user = dao.load(idIntForm);
+//		Integer idIntForm = Integer.parseInt(id);
+		User user = dao.load(Integer.parseInt(id));
 		model.addAttribute(user);
 		return "userinfoview";
 	}
