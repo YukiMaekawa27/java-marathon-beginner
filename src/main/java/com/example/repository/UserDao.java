@@ -19,7 +19,7 @@ public class UserDao {
 		user.setAddress(rs.getString("address"));
 		return user;
 	};
-	
+
 	@Autowired
 	private NamedParameterJdbcTemplate template;
 
