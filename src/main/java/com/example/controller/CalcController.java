@@ -19,8 +19,8 @@ public class CalcController {
 	}
 
 	@RequestMapping("/output")
-	public String output(int num1, int num2) {
-		session.setAttribute("number", num1 * num2);
+	public String output(String num1, String num2) {
+		session.setAttribute("number", Integer.parseInt(num1) * Integer.parseInt(num2));
 		return "outputvalue";
 	}
 

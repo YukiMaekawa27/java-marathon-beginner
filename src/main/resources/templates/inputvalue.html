@@ -5,6 +5,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<form th:action="@{/calc/output}" method="post">
+	<input type="text" name="num1">×<input type="text" name="num2"><br>
+	<button>計算</button>
+</form>
 </body>
 </html>
