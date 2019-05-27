@@ -1,6 +1,7 @@
 package com.example.domain;
 
 public class User {
+	private Integer id;
 	private String name;
 	private Integer age;
 	private String address;
@@ -27,6 +28,14 @@ public class User {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 }

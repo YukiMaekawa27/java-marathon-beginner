@@ -24,7 +24,7 @@ public class RegisterController {
 				Integer.parseInt(goods1) + Integer.parseInt(goods2) + Integer.parseInt(goods3);
 		application.setAttribute("totalPriceWithoutTax", totalPriceWithoutTax);
 		Integer totalPriceWithTax =
-				(int)((Integer.parseInt(goods1) + Integer.parseInt(goods2) + Integer.parseInt(goods3)) * 1.08);
+				(int)(totalPriceWithoutTax * 1.08);
 		application.setAttribute("totalPriceWithTax", totalPriceWithTax);
 		return "totalprice";
 	}
